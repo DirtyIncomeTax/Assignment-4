@@ -31,11 +31,11 @@ function printMovies() {
 //print out the total number of matches
 let highRatings = (rating) => {
     console.log("Printing movies that have a higher rating than 3.5")
-    x = 0;
+    a = 0;
     for (i = 0; i < allMovies.length; i++){
         if (allMovies[i].rating > rating){
             console.log(allMovies[i])
-            x++;
+            a++;
         }
     }
     console.log(`In total, there are ${x} matches`)
