@@ -21,7 +21,7 @@ let addMovie = (movie) => {
 function printMovies() {
     console.log("Printing all movies....")
     for (i = 0; i < allMovies.length; i++){
-        console.log(allMovies[i])
+        console.log(`${allMovies[i].title}` + ", rating of " + `${allMovies[i].rating}` + ", have watched: " + `${allMovies[i].haveWatched}`)
     }
     console.log(`You have ${allMovies.length} movies in total`)
 }
@@ -34,11 +34,11 @@ let highRatings = (rating) => {
     a = 0;
     for (i = 0; i < allMovies.length; i++){
         if (allMovies[i].rating > rating){
-            console.log(allMovies[i])
+            console.log(`${allMovies[i].title}` + ", rating of " + `${allMovies[i].rating}` + ", have watched: " + `${allMovies[i].haveWatched}`)
             a++;
         }
     }
-    console.log(`In total, there are ${x} matches`)
+    console.log(`In total, there are ${a} matches`)
 }
 
 
